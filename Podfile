@@ -5,6 +5,7 @@ target 'DogeBreeds' do
   use_frameworks!
 
   # Pods for DogeBreeds
+  pod 'Alamofire', '~> 5.5'
   pod 'Kingfisher', '~> 7.0'
 
   target 'DogeBreedsTests' do
