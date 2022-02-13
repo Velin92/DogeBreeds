@@ -140,7 +140,7 @@
 		A7F3956227B96F800006C828 /* DogeBreeds */ = {
 			isa = PBXGroup;
 			children = (
-				A7F3958D27B97DA20006C828 /* Clients */,
+				A7F3959027B982F70006C828 /* Networking */,
 				A7F3956327B96F800006C828 /* DogeBreedsApp.swift */,
 				A7F3956527B96F800006C828 /* ContentView.swift */,
 				A7F3956727B96F810006C828 /* Assets.xcassets */,
@@ -174,22 +174,22 @@
 			path = DogeBreedsUITests;
 			sourceTree = "<group>";
 		};
-		A7F3958D27B97DA20006C828 /* Clients */ = {
-			isa = PBXGroup;
-			children = (
-				A7F3959027B982F70006C828 /* Network */,
-			);
-			path = Clients;
-			sourceTree = "<group>";
-		};
-		A7F3959027B982F70006C828 /* Network */ = {
+		A7F3959027B982F70006C828 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				A7F3958E27B97DC50006C828 /* AFClient.swift */,
-				A7F3959127B983050006C828 /* Endpoint.swift */,
-				A7F3959327B986A30006C828 /* DogAPIEndpoint.swift */,
+				A7F3959627B98E160006C828 /* Endpoint */,
 			);
-			path = Network;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A7F3959627B98E160006C828 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				A7F3959327B986A30006C828 /* DogAPIEndpoint.swift */,
+				A7F3959127B983050006C828 /* Endpoint.swift */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
