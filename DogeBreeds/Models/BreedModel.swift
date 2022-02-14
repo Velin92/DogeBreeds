@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct BreedModel {
+struct BreedModel: Equatable {
     let name: String
     let subBreeds: [String]
     let imageUrls: [URL]
-    let isFavourite: Bool
+    var isFavourite: Bool
 }
 
 extension BreedModel: Identifiable {

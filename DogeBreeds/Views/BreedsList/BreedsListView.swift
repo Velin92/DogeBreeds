@@ -12,8 +12,16 @@ struct BreedsListView: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.breeds, id: \.id) { breed in
+            List(viewModel.filteredBreeds, id: \.id) { breed in
                 BreedCellView(viewModel: viewModel.getCellViewModel(for: breed))
+            }
+            .navigationTitle("Doge Breeds")
+            .toolbar {
+                Button(action: {
+                    viewModel.isFilterEnabled.toggle()
+                }, label: {
+                    Image(systemName: viewModel.isFilterEnabled ? "star.fill" : "star" )
+                })
             }
             .onAppear(perform: self.viewModel.onAppear)
         }

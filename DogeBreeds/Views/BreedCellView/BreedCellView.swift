@@ -16,13 +16,17 @@ struct BreedCellView: View {
         HStack {
             KFImage(viewModel.imageUrl)
                 .resizable()
-                .frame(width: 200, height: 200)
                 .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
             VStack {
                 Text(viewModel.breedText)
-                    .font(.title)
+                    .lineLimit(1)
+                    .font(.headline)
+                    .minimumScaleFactor(0.5)
                 Text(viewModel.subBreedsText)
+                    .lineLimit(1)
                     .font(.body)
+                    .minimumScaleFactor(0.5)
             }
             .padding()
             Spacer()
@@ -31,7 +35,7 @@ struct BreedCellView: View {
             } label: {
                 Image(systemName: viewModel.isFavourite ? "star.fill" : "star")
                     .resizable()
-                    .frame(width: 40, height: 40)
+                    .frame(width: 30, height: 30)
             }
             .padding()
         }
