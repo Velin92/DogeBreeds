@@ -13,7 +13,11 @@ struct BreedsListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.filteredBreeds, id: \.id) { breed in
-                NavigationLink(destination: BreedView()) {
+                NavigationLink(
+                    destination: BreedView(
+                        viewModel: viewModel.getDetailViewModel(for: breed)
+                    )
+                ) {
                     BreedCellView(viewModel: viewModel.getCellViewModel(for: breed))
                 }
             }

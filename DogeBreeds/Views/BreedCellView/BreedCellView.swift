@@ -19,11 +19,11 @@ struct BreedCellView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 100, height: 100)
             VStack {
-                Text(viewModel.breedText)
+                Text(viewModel.name)
                     .lineLimit(1)
                     .font(.headline)
                     .minimumScaleFactor(0.5)
-                Text(viewModel.subBreedsText)
+                Text(viewModel.subBreedsInfo)
                     .lineLimit(1)
                     .font(.body)
                     .minimumScaleFactor(0.5)

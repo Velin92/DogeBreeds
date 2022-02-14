@@ -50,6 +50,10 @@ final class BreedsListViewModel: ObservableObject {
         }
     }
     
+    func getDetailViewModel(for breed: BreedModel) -> BreedViewModel {
+        return BreedViewModel(model: breed)
+    }
+    
     func favouriteTapped(for breed: BreedModel) {
         print("tap")
         guard let index = breeds .firstIndex(where: { $0 == breed })else { return }

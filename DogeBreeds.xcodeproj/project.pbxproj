@@ -16,6 +16,7 @@
 		A725F2DD27B9A63B0000A060 /* ImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725F2DC27B9A63B0000A060 /* ImagesResponse.swift */; };
 		A725F2E027B9E2980000A060 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725F2DF27B9E2980000A060 /* Storage.swift */; };
 		A725F2E527B9ECE40000A060 /* BreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725F2E427B9ECE40000A060 /* BreedView.swift */; };
+		A725F2E727B9EF3B0000A060 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725F2E627B9EF3B0000A060 /* BreedViewModel.swift */; };
 		A7F3956427B96F800006C828 /* DogeBreedsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3956327B96F800006C828 /* DogeBreedsApp.swift */; };
 		A7F3956627B96F800006C828 /* BreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3956527B96F800006C828 /* BreedsListView.swift */; };
 		A7F3956827B96F810006C828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F3956727B96F810006C828 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		A725F2DC27B9A63B0000A060 /* ImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesResponse.swift; sourceTree = "<group>"; };
 		A725F2DF27B9E2980000A060 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		A725F2E427B9ECE40000A060 /* BreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedView.swift; sourceTree = "<group>"; };
+		A725F2E627B9EF3B0000A060 /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
 		A7F3956027B96F800006C828 /* DogeBreeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeBreeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F3956327B96F800006C828 /* DogeBreedsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeBreedsApp.swift; sourceTree = "<group>"; };
 		A7F3956527B96F800006C828 /* BreedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				A725F2E427B9ECE40000A060 /* BreedView.swift */,
+				A725F2E627B9EF3B0000A060 /* BreedViewModel.swift */,
 			);
 			path = BreedView;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				A7F3958F27B97DC50006C828 /* AFClient.swift in Sources */,
 				A725F2D227B99E810000A060 /* BreedsListViewModel.swift in Sources */,
 				A7F3959427B986A30006C828 /* DogAPIEndpoint.swift in Sources */,
+				A725F2E727B9EF3B0000A060 /* BreedViewModel.swift in Sources */,
 				A725F2DD27B9A63B0000A060 /* ImagesResponse.swift in Sources */,
 				A7F3959B27B98FF10006C828 /* BreedCellView.swift in Sources */,
 			);
