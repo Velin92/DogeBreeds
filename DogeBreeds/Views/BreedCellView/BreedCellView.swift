@@ -30,14 +30,15 @@ struct BreedCellView: View {
             }
             .padding()
             Spacer()
-            Button {
-                viewModel.favouriteTapped?()
-            } label: {
-                Image(systemName: viewModel.isFavourite ? "star.fill" : "star")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-            }
-            .padding()
+            Image(systemName: viewModel.isFavourite ? "star.fill" : "star")
+                .renderingMode(.template)
+                .resizable()
+                .foregroundColor(.blue)
+                .frame(width: 30, height: 30)
+                .padding()
+                .onTapGesture {
+                    viewModel.favouriteTapped?()
+                }
         }
     }
 }

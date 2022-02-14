@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 final class BreedsListViewModel: ObservableObject {
+    private var hasAlreadyAppeared = false
     @Published var isFilterEnabled: Bool = false
     @Published private var breeds: [BreedModel] = []
     
@@ -29,6 +30,7 @@ final class BreedsListViewModel: ObservableObject {
     }
     
     func onAppear() {
+        guard !hasAlreadyAppeared else { return }
         self.breedsService.getAllBreeds()
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -39,6 +41,7 @@ final class BreedsListViewModel: ObservableObject {
                 self?.breeds = breeds
             })
             .store(in: &self.cancellables)
+        hasAlreadyAppeared = true
     }
     
     func getCellViewModel(for breed: BreedModel) -> BreedCellViewModel {
