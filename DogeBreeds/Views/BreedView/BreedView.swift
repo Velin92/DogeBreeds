@@ -40,6 +40,7 @@ struct BreedView: View {
                         .aspectRatio(contentMode: .fit)
                 }
             }
+            .padding()
         }
         .navigationTitle(viewModel.title)
     }

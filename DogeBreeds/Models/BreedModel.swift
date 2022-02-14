@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BreedModel: Equatable {
+struct BreedModel: Equatable, Hashable {
     let name: String
     let subBreeds: [String]
     let imageUrls: [URL]
