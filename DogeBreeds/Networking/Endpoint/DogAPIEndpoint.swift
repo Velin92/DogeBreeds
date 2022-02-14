@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 enum DogAPIEndpoint {
-    static let baseURL = URL(string: "https://dog.ceo/api/breed/")!
+    static let baseURL = URL(string: "https://dog.ceo/api/")!
     
     case getAllBreeds
     case getImages(breed: String)
@@ -19,8 +19,8 @@ enum DogAPIEndpoint {
 extension DogAPIEndpoint: Endpoint {
     var path: String {
         switch self {
-        case .getAllBreeds: return "list/all"
-        case .getImages(let breed): return "\(breed)/images"
+        case .getAllBreeds: return "breeds/list/all"
+        case .getImages(let breed): return "breed/\(breed)/images"
         }
     }
     
